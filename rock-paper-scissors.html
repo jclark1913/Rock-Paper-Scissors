@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>The Odin Project - Rock Paper Scissors</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+
+        //Setting options
+
+        let choices = ["rock", "paper", "scissors"];
+
+        //Player input
+
+        let playerSelection = "rock"
+
+        //Computer choice
+
+        function getComputerChoice() {
+            let computerChoice = choices[Math.floor(Math.random() * choices.length)];
+            return computerChoice;
+        }
+
+        computerSelection = getComputerChoice();
+
+        //Game
+
+        function playGame(computerSelection, playerSelection) {
+            if ((computerSelection === "rock" && playerSelection === "paper") ||
+                (computerSelection === "scissors" && playerSelection === "rock") ||
+                (computerSelection === "paper" && playerSelection === "scissors")) {
+                let gameMessage = `You win! ${playerSelection} beats ${computerSelection}`;
+                return gameMessage;
+            } else if (computerSelection === playerSelection) {
+                let gameMessage = `It's a draw! You both selected ${playerSelection}`;
+                return gameMessage;
+            } else {
+                let gameMessage = `You lose! ${computerSelection} beats ${playerSelection}`;
+                return gameMessage;
+            }
+
+        }
+
+        gameMessage = playGame(computerSelection, playerSelection);
+        console.log(gameMessage);
+
+
+        //Endgame message
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
