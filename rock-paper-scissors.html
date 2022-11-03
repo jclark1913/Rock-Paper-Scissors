@@ -15,7 +15,20 @@
 
         //Player input
 
-        let playerSelection = "rock"
+        function playerSelect() {
+            let playerSelection = prompt("Rock, paper or scissors?", "");
+            playerSelection = playerSelection.toLowerCase();
+            if (playerSelection === "rock" ||
+                playerSelection === "scissors" ||
+                playerSelection === "paper") {
+                    return playerSelection;
+                } else {
+                    alert("Please enter a valid option: \"Rock, Paper, or Scissors\"");
+                    playerSelection = playerSelect();
+                    return playerSelection;
+                }
+        }
+        
 
         //Computer choice
 
@@ -28,7 +41,7 @@
 
         //Game
 
-        function playGame(computerSelection, playerSelection) {
+        function playRound(computerSelection, playerSelection) {
             if ((computerSelection === "rock" && playerSelection === "paper") ||
                 (computerSelection === "scissors" && playerSelection === "rock") ||
                 (computerSelection === "paper" && playerSelection === "scissors")) {
@@ -44,7 +57,8 @@
 
         }
 
-        gameMessage = playGame(computerSelection, playerSelection);
+        playerSelection = playerSelect();
+        gameMessage = playRound(computerSelection, playerSelection);
         console.log(gameMessage);
 
 
