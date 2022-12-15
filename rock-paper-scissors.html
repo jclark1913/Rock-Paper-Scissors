@@ -4,112 +4,26 @@
 <head>
     <title>The Odin Project - Rock Paper Scissors</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <script>
 
-        //Setting options
+    <div class="container">
+        <header class="header">
+            <h1>Header Placeholder</h1>
+        </header>
 
-        let choices = ["rock", "paper", "scissors"];
+        <main class="body">
+            <p>Body placeholder</p>
+        </main>
 
-        //Player input
-
-        function playerSelect() {
-            let playerSelection = prompt("Rock, paper or scissors?", "");
-            playerSelection = playerSelection.toLowerCase();
-            if (playerSelection === "rock" ||
-                playerSelection === "scissors" ||
-                playerSelection === "paper") {
-                return playerSelection;
-            } else {
-                alert("Please enter a valid option: \"Rock, Paper, or Scissors\"");
-                playerSelection = playerSelect();
-                return playerSelection;
-            }
-        }
+        <footer class="footer">
+            <p>Created by JC</p>
+        </footer>
+    </div>
 
 
-        //Computer choice
-
-        function getComputerChoice() {
-            let computerChoice = choices[Math.floor(Math.random() * choices.length)];
-            return computerChoice;
-        }
-
-        computerSelection = getComputerChoice();
-
-        //Round
-
-        function playRound(computerSelection, playerSelection) {
-            if ((computerSelection === "rock" && playerSelection === "paper") ||
-                (computerSelection === "scissors" && playerSelection === "rock") ||
-                (computerSelection === "paper" && playerSelection === "scissors")) {
-                let gameMessage = `You win! ${playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1)} beats ${computerSelection}`;
-                return gameMessage;
-            } else if (computerSelection === playerSelection) {
-                let gameMessage = `It's a draw! You both selected ${playerSelection}`;
-                return gameMessage;
-            } else {
-                let gameMessage = `You lose! ${computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1)} beats ${playerSelection}`;
-                return gameMessage;
-            }
-
-        }
-
-        //Scorekeeping
-
-        let playerScore = 0;
-        let computerScore = 0;
-
-
-        //Playing game
-
-        for (let i = 0; i < 5; i++) {
-            game();
-            winCheck = gameMessage.includes("win");
-            loseCheck = gameMessage.includes("lose");
-            if (winCheck === true && loseCheck === false) {
-                playerScore = playerScore + 1;
-            } else if (winCheck === false && loseCheck === true) {
-                computerScore = computerScore + 1
-            } else {
-
-            }
-        }
-
-        function game() {
-            playerSelection = playerSelect();
-            computerSelection = getComputerChoice();
-            gameMessage = playRound(computerSelection, playerSelection);
-            console.log(gameMessage);
-        }
-
-        //Endgame message
-
-        function getScore() {
-            if (playerScore > computerScore) {
-                let endGameMessage = `You beat the computer ${playerScore} to ${computerScore}!`;
-                return endGameMessage;
-            } else if (computerScore > playerScore) {
-                endGameMessage = `The computer beat you ${computerScore} to ${playerScore}!`;
-                return endGameMessage;
-            } else {
-                endGameMessage = `It's a ${computerScore}-${playerScore} draw!`;
-                return endGameMessage;
-            }
-        }
-
-        endGameMessage = getScore();
-        console.log(endGameMessage);
-
-
-
-
-
-
-
-    </script>
 </body>
 
 </html>
