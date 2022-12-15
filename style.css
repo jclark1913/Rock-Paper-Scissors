@@ -3,3 +3,29 @@
     flex-direction: column;
     min-height: 100vh;
 }
+
+.header {
+    flex: 0 0 auto;
+    text-align: center;
+    background: gray;
+}
+
+.body {
+    flex: 1 1 auto;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items:initial;
+    justify-content:baseline
+}
+
+.game-box {
+    flex: 1 0 auto;
+    padding-top: 100px;
+}
+
+.footer {
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: gray;
+}
