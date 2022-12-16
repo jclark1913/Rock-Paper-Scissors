@@ -12,40 +12,40 @@
 
     <div class="container">
         <header class="header">
-            <h1>Header Placeholder</h1>
+            <h1>{ Rock | Paper | Scissors }</h1>
         </header>
 
         <main class="body">
             <div class="game-box">
-                <h2 class="scoreboard-title">Body placeholder</h2>
-                <h3 class="scoreboard-description">Description</h3>
+                <h2 class="scoreboard-title">Click an icon to begin</h2>
+                <h3 class="scoreboard-description">First to 5 points wins!</h3>
                 <div class="score-trackers">
                     <div class="player-score">
                         <div class="player-icon"><img src="../images/user-icon.svg" class="icon"></div>
-                        <p>Player Score</p>
+                        <p>Player Score: 0</p>
                     </div>
                     <div class="player-score">
                         <div class="player-icon"><img src="../images/computer-icon.svg" class="icon"></div>
-                        <p>Computer Score</p>
+                        <p>Computer Score: 0</p>
                     </div>
                 </div>
                 <div class="rps-selectors">
-                    <div class="selector"><img src="../images/rock-icon.svg" class="selector-button"></div>
-                    <div class="selector"><img src="../images/scissors-icon.svg" class="selector-button"></div>
-                    <div class="selector"><img src="../images/paper-icon.svg" class="selector-button"></div>
+                    <button type="button" class="selector" id="rockChoice"><img src="../images/rock-icon.svg" class="selector-button"></button>
+                    <button type="button" class="selector" id="scissorsChoice"><img src="../images/scissors-icon.svg" class="selector-button"></button>
+                    <button type="button" class="selector" id="paperChoice"><img src="../images/paper-icon.svg" class="selector-button"></button>
                 </div>
                 <div class="score-log">
-                    <p>Here is where the scores will be posted</p>
+                    <p>Good luck!</p>
                 </div>
             </div>
         </main>
 
         <footer class="footer">
-            <p>Created by JC</p>
+            <p>Created by JC</p><a href="https://www.github.com/zelameh"><img src="../images/github-mark-white.svg" class="github-link"></a>
         </footer>
     </div>
 
-
+<script src="rps-script.js"></script>
 </body>
 
 </html>

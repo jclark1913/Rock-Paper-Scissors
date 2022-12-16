@@ -37,9 +37,10 @@ body {
     padding: 20px 0px;
     flex-direction: row;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    max-width: 350px;
+    margin: auto;
 }
-
 
 .rps-selectors {
     display: flex;
@@ -49,6 +50,21 @@ body {
     max-width: 500px;
     padding: 20px 0px;
     margin: auto;
+}
+
+.selector {
+    background-color: rgb(248, 248, 248);
+    transition-duration: 0;
+    cursor: pointer;
+}
+
+.selector:hover {
+    background-color: grey;
+    color: white;
+}
+
+.selector-button {
+    width: 100px;
 }
 
 .player-score {
@@ -66,8 +82,20 @@ body {
     flex: 0 0 auto;
     text-align: center;
     background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 svg {
     color: "black";
+}
+
+p {
+    margin: 10px;
+}
+
+.github-link {
+    height: 17px;
+    text-align: center;
 }
