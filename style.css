@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -16,16 +20,54 @@
     vertical-align: middle;
     display: flex;
     align-items:initial;
-    justify-content:baseline
+    justify-content: center;
+    background-color: rgb(232, 238, 255);
 }
 
 .game-box {
     flex: 1 0 auto;
-    padding-top: 100px;
+    padding-top: 50px;
+    max-width: 700px;
+    min-width: 700px;
+    align-items: center;
+}
+
+.score-trackers {
+    display: flex;
+    padding: 20px 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+
+.rps-selectors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 500px;
+    padding: 20px 0px;
+    margin: auto;
+}
+
+.player-score {
+    border: solid;
+    width: 150px;
+}
+
+.score-log {
+    flex: 1 0 auto;
+    text-align: center;
+    justify-self: flex-start;
 }
 
 .footer {
     flex: 0 0 auto;
     text-align: center;
     background-color: gray;
+}
+
+svg {
+    color: "black";
 }
