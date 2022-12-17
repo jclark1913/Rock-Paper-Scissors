@@ -83,18 +83,18 @@ const playerIcon = document.getElementById('playerIcon');
 const computerIcon = document.getElementById('computerIcon');
 function setRoundIcons(playerChoice) {
     if (playerChoice === 'rock') {
-        playerIcon.src = "../images/rock-icon.svg"
+        playerIcon.src = "./images/rock-icon.svg"
     } else if (playerChoice === 'scissors') {
-        playerIcon.src = "../images/scissors-icon.svg"
+        playerIcon.src = "./images/scissors-icon.svg"
     } else if (playerChoice === 'paper') {
-        playerIcon.src = "../images/paper-icon.svg"
+        playerIcon.src = "./images/paper-icon.svg"
     }
     if (computerChoice === 'rock') {
-        computerIcon.src = "../images/rock-icon.svg"
+        computerIcon.src = "./images/rock-icon.svg"
     } else if (computerChoice === 'scissors') {
-        computerIcon.src = "../images/scissors-icon.svg"
+        computerIcon.src = "./images/scissors-icon.svg"
     } else if (computerChoice === 'paper') {
-        computerIcon.src = "../images/paper-icon.svg"
+        computerIcon.src = "./images/paper-icon.svg"
     }
 }
 
@@ -121,8 +121,8 @@ function enableButtons(){
 
 // Reset icons
 function resetIcons(){
-    playerIcon.src = "../images/user-icon.svg";
-    computerIcon.src = "../images/computer-icon.svg"
+    playerIcon.src = "./images/user-icon.svg";
+    computerIcon.src = "./images/computer-icon.svg"
 }
 
 // End game
