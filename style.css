@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0px;
 }
@@ -98,4 +102,32 @@ p {
 .github-link {
     height: 17px;
     text-align: center;
+}
+
+.tryAgainButton {
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.tryAgainButton:hover{
+    background-color: grey;
+    color: white;
+}
+
+@media (max-width: 500px){
+    .game-box {
+        max-width: 250px;
+    }
+    
+    .rps-selectors {
+        max-width: 300x;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .selector-button {
+        max-width: 70px
+    }
 }

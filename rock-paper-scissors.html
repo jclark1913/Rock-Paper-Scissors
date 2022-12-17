@@ -17,15 +17,15 @@
 
         <main class="body">
             <div class="game-box">
-                <h2 class="scoreboard-title">Click an icon to begin</h2>
-                <h3 class="scoreboard-description">First to 5 points wins!</h3>
+                <h2 class="scoreboard-title" id="scoreboardTitle">Click an icon to begin</h2>
+                <h3 class="scoreboard-description" id="descriptionText">First to 5 points wins!</h3>
                 <div class="score-trackers">
                     <div class="player-score">
-                        <div class="player-icon"><img src="../images/user-icon.svg" class="icon"></div>
+                        <div class="player-icon"><img src="../images/user-icon.svg" class="icon" id="playerIcon"></div>
                         <p id="playerScoreboard">Player Score: 0</p>
                     </div>
                     <div class="player-score">
-                        <div class="player-icon"><img src="../images/computer-icon.svg" class="icon"></div>
+                        <div class="player-icon"><img src="../images/computer-icon.svg" class="icon" id="computerIcon"></div>
                         <p id="computerScoreboard">Computer Score: 0</p>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                     <button type="button" class="selector" id="scissorsChoice"><img src="../images/scissors-icon.svg" class="selector-button"></button>
                     <button type="button" class="selector" id="paperChoice"><img src="../images/paper-icon.svg" class="selector-button"></button>
                 </div>
-                <div class="score-log">
+                <div class="score-log" id="ticker">
                     <p>Good luck!</p>
                 </div>
             </div>
